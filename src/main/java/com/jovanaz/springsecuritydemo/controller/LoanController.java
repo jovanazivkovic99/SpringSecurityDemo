@@ -4,9 +4,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class WelcomeController {
-    @GetMapping("/welcome")
-    public String sayWelcome(){
-        return "Welcome from Spring Application withou Spring Security.";
+public class LoanController {
+    @GetMapping("/myLoans")
+    public String getLoanDetails(String input){
+        return "Here are the loan details.";
     }
 }
